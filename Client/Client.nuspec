@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Dollar.Authentication.Client</id>
+    <version>1.0.0.0</version>
+    <title>Dollar.Authentication.Client</title>
+    <authors>Amy Papaconstantinou</authors>
+    <owners>Dollar</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Authentication Api Client that integrates any resource (i.e. Website) with the Dollar Authentication Service.
+      The web.config.transform file as part of this package contains configurable values which will be merged in the configuration file of the Client application.
+    </description>
+    <copyright>Copyright Dollar© 2015</copyright>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.2" />
+      <dependency id="Newtonsoft.Json" version="6.0.8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="web.config.transform" target="content"/>
+    <file src="readme.txt" target=""/>
+    <file src="bin\Debug\Dollar.Authentication.Common.dll" target="lib\net45"/>
+  </files>
+</package>

@@ -1,0 +1,10 @@
+﻿<configuration>
+  <configSections>
+    <section name="dollarAuthClient" type="Dollar.Authentication.Client.Configuration, Dollar.Authentication.Client" />
+  </configSections>
+  <dollarAuthClient
+   ResourceId="AccountManagement"
+   ServerEndpoint="http://localhost:58179"
+   AuthTimeout="4000">
+  </dollarAuthClient>
+</configuration>
